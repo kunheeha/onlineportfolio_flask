@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kunhee Ha - Web Developer</title>
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- NEED TO WRITE DESCRIPTION AND KEYWORDS -->
+		<meta name="description" content="NEED DESCRIPTION">
+		<meta name="keywords" content="NEET KEYWORDS">
+		<!-- NEED TO WRITE DESCRIPTION AND KEYWORDS -->
+		<meta name="developer" content="Kunhee Ha">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- FAVICONS -->
+		<link rel="shortcut icon" href="{{ url_for('static', filename='icons/favicon.ico') }}">
+		<!-- Google Font -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='icons/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+		<!-- Animate CSS-->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.css') }}">
+		<!-- Owl Carousel CSS-->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.css') }}">
+		<!-- Fancybox-->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}">
+		<!-- Custom CSS-->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+        <!-- Colors -->
+        
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/colours/defauld.css') }}" title="defauld">
+        <!-- <link rel="alternate stylesheet" href="{{ url_for('static', filename='css/colours/blue.css') }}" title="blue"> -->
+        <!-- <link rel="alternate stylesheet" href="{{ url_for('static', filename='css/colours/green.css') }}" title="green"> -->
+        <!-- <link rel="alternate stylesheet" href="{{ url_for('static', filename='css/colours/blue-munsell.css') }}" title="blue-munsell"> -->
+        <!-- <link rel="alternate stylesheet" href="{{ url_for('static', filename='css/colours/orange.css') }}" title="orange"> -->
+        <!-- <link rel="alternate stylesheet" href="{{ url_for('static', filename='css/colours/purple.css') }}" title="purple"> -->
+        <!-- <link rel="alternate stylesheet" href="{{ url_for('static', filename='css/colours/slate.css') }}" title="slate"> -->
+        <!-- <link rel="alternate stylesheet" href="{{ url_for('static', filename='css/colours/yellow.css') }}" title="yellow"> -->
+
+		{% block head %}{% endblock %}
+
+	</head>
+	<body class="dark-vertion black-bg">
+
+		<!-- Start Loader -->
+	    <div class="section-loader">
+	        <div class="loader">
+	            <div></div>
+	            <div></div> 
+	        </div>
+	    </div>
+	    <!-- End Loader -->
+
+		<!-- NAVIGATION BAR -->
+        <header class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp" id="mh-header">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg mh-nav nav-btn">
+                        <a class="navbar-brand" href="#">
+                            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="" class="img-fluid">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon icon"></span>
+                        </button>
+                    
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-0 ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#mh-home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mh-about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                   <a class="nav-link" href="#mh-skills">Skills</a>
+                                </li>                                
+                                <li class="nav-item">
+                                   <a class="nav-link" href="#mh-experience">Experiences</a>
+                                </li>                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mh-portfolio">Projects</a>
+                                </li>                               
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mh-pricing">Please</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#mh-blog">Hire Me</a>
+                                </li>
+                                <li class="nav-item">
+                                   <a class="nav-link" href="#mh-contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        {% block content %}{% endblock %}
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        
+        <!-- jQuery -->
+        <script src="{{ url_for('static', filename='javascript/jquery-3.5.1.js') }}"></script>
+        <!-- popper -->
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+        <!-- bootstrap -->
+        <script src="{{ url_for('static', filename='javascript/bootstrap.js') }}"></script>
+        <!-- owl carousel -->
+        <script src="{{ url_for('static', filename='javascript/owl.carousel.js') }}"></script>
+        <!-- validator -->
+        <script src="{{ url_for('static', filename='javascript/validator.min.js') }}"></script>
+        <!-- wow -->
+        <script src="{{ url_for('static', filename='javascript/wow.min.js') }}"></script>
+        <!-- mixin js-->
+        <script src="{{ url_for('static', filename='javascript/jquery.mixitup.min.js') }}"></script>
+        <!-- circle progress-->
+        <script src="{{ url_for('static', filename='javascript/circle-progress.js') }}"></script>
+        <!-- jquery nav -->
+        <script src="{{ url_for('static', filename='javascript/jquery.nav.js') }}"></script>
+        <!-- Fancybox js-->
+        <script src="{{ url_for('static', filename='javascript/jquery.fancybox.min.js') }}"></script>
+        <!-- isotope js-->
+        <script src="{{ url_for('static', filename='javascript/isotope.pkgd.js') }}"></script>
+        <script src="{{ url_for('static', filename='javascript/packery-mode.pkgd.js') }}"></script>
+        <!-- Map api -->
+        <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyCRP2E3BhaVKYs7BvNytBNumU0MBmjhhxc"></script>
+        <!-- Custom Scripts-->
+        <script src="{{ url_for('static', filename='javascript/Custom/map-init.js') }}"></script>
+        <script src="{{ url_for('static', filename='javascript/Custom/custom-scripts.js') }}"></script>
+
+	</body>
+</html>
