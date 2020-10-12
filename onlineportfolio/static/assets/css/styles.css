@@ -646,11 +646,11 @@ ul li {
 }
 
 .home-2-img {
-  background-image: url(../images/home-bg-img.jpg);
+  background-image: url(../../images/backgroundimg2.jpeg);
 }
 
 .featured-img-one {
-  background-image: url(../images/home-bg-img.jpg);
+  background-image: url(../../images/backgroundimg3.jpeg);
 }
 
 .featured-img-two {
@@ -1596,14 +1596,16 @@ li .fa {
   float: none;
   margin-top: 30px;
   text-align: center;
+  margin-left: 50px;
 }
 
 .mh-home .hero-img img {
   margin: 0 auto;
   float: none;
   text-align: center;
-  border: 20px solid rgba(0, 0, 0, 0.17);
-  border-radius: 50%;
+  margin-top: 15px;
+  border-radius: 30%;
+  border: 20px solid rgba(0, 0, 0, 0.07);
 }
 
 .mh-home .img-border {

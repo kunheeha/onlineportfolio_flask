@@ -34,14 +34,14 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/responsive.css') }}">
         
         <!-- Colors -->
-        <link rel="alternate stylesheet" href="{{ url_for('static', filename='assets/css/colors/blue.css') }}" title="blue">
-        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/colors/defauld.css') }}" title="defauld">
-        <link rel="alternate stylesheet" href="{{ url_for('static', filename='assets/css/colors/green.css') }}" title="green">
-        <link rel="alternate stylesheet" href="{{ url_for('static', filename='assets/css/colors/blue-munsell.css') }}" title="blue-munsell">
-        <link rel="alternate stylesheet" href="{{ url_for('static', filename='assets/css/colors/orange.css') }}" title="orange">
-        <link rel="alternate stylesheet" href="{{ url_for('static', filename='assets/css/colors/purple.css') }}" title="purple"> 
-        <link rel="alternate stylesheet" href="{{ url_for('static', filename='assets/css/colors/slate.css') }}" title="slate">
-        <link rel="alternate stylesheet" href="{{ url_for('static', filename='assets/css/colors/yellow.css') }}" title="yellow">
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/colors/blue.css') }}" title="blue">
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/colors/defauld.css') }}" title="defauld"> -->
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/colors/green.css') }}" title="green"> -->
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/colors/blue-munsell.css') }}" title="blue-munsell"> -->
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/colors/orange.css') }}" title="orange"> -->
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/colors/purple.css') }}" title="purple"> --> 
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/colors/slate.css') }}" title="slate"> -->
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/colors/yellow.css') }}" title="yellow"> -->
         
     </head>
     <body class="white-vertion home-video black-bg">
@@ -67,7 +67,6 @@
                     <nav class="navbar navbar-expand-lg mh-nav nav-btn">
                         <a class="navbar-brand" href="#">
                             <img src="assets/images/fedalon_logo.png" alt="" class="img-fluid">
-                            <!-- <h2>Maha</h2> -->
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon icon"></span>
@@ -105,11 +104,12 @@
                 Video section
                 -->
                 <div class="section-video">
-                    <video autoplay="" class="bgvid" loop="" muted="">
+                    <img class="bgvig" src="{{ url_for('static', filename='images/backgroundimg.jpeg') }}">
+                    <!-- <video autoplay="" class="bgvid" loop="" muted="">
                         <source src="assets/video/video.webm" type="video/webm">
                         <source src="assets/video/video.mp4" type="video/mp4">
-                        <!-- <source src="video/video.ogv" type="video/ogv"> -->
-                    </video>
+                        <source src="video/video.ogv" type="video/ogv">
+                    </video> -->
                 </div>
                 <div class="container">
                     <div class="row section-separator xs-column-reverse vertical-middle-content home-padding">

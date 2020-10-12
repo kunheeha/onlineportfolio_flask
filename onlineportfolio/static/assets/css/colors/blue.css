@@ -1,69 +1,69 @@
 .new .navbar-toggler .icon, .new .navbar-toggler .icon::after, .new .navbar-toggler .icon::before {
-  background-color: #a97afd;
+  background-color: #21618C;
 }
 
 .white-vertion .page-item.active .page-link {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .dark-vertion .page-item.active .page-link {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-header .navbar-nav li a:hover {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-home-2 .mh-header-info ul.mh-home-contact li:hover .fa {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-home .mh-header-info .mh-promo span {
-  background-color: #a97afd;
+  background-color: #21618C;
 }
 
 .mh-home .mh-header-info ul li:hover .fa {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-about-tag ul li span {
-  border: 1px solid #a97afd;
+  border: 1px solid #21618C;
 }
 
 .mh-about-tag ul li span:hover {
-  background-color: #a97afd;
+  background-color: #21618C;
 }
 
 .mh-progress path:nth-child(2) {
-  stroke: #a97afd;
+  stroke: #21618C;
 }
 
 .candidatos .parcial .percentagem {
-  background: #a97afd;
+  background: #21618C;
 }
 
 .mh-experince .mh-education-deatils .mh-education-item .mh-eduyear {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-work .mh-experience-deatils .mh-work-item .mh-eduyear {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-experince .mh-education-deatils .mh-education-item h4 a {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-work .mh-experience-deatils .mh-work-item h4 a {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .portfolio-nav ul li:hover {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .portfolio-nav ul li.active {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-pricing .mh-pricing:hover .btn {
@@ -75,7 +75,7 @@
 }
 
 .mh-pricing .mh-pricing h5 {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-blog .mh-blog-item .blog-inner h2 a {
@@ -83,15 +83,15 @@
 }
 
 .mh-blog .mh-blog-item .blog-inner a {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-blog .mh-blog-item h2 {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-blog .mh-blog-item h2 a {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-blog .mh-blog-item h2 a:hover {
@@ -99,47 +99,47 @@
 }
 
 .mh-testimonial .mh-client-item img {
-  border: 5px solid #a97afd;
+  border: 5px solid #21618C;
 }
 
 .mh-testimonial .owl-controls .owl-dots .owl-dot {
-  border: 1px solid #a97afd;
+  border: 1px solid #21618C;
 }
 
 .mh-testimonial .owl-controls .owl-dots .owl-dot.active {
-  background-color: #a97afd;
+  background-color: #21618C;
 }
 
 .mh-footer-address .mh-address-footer-item .each-icon .fa {
-  border-color: #a97afd;
+  border-color: #21618C;
 }
 
 .old .navbar-collapse {
-  background-color: #a97afd;
+  background-color: #21618C;
 }
 
 .old .navbar-header .navbar-toggler .icon-bar {
-  background-color: #a97afd;
+  background-color: #21618C;
 }
 
 .old .navbar-collapse {
-  background-color: #a97afd;
+  background-color: #21618C;
 }
 
 .new .navbar-collapse {
-  background-color: #a97afd;
+  background-color: #21618C;
 }
 
 .new .navbar-header .navbar-toggler .icon-bar {
-  background-color: #a97afd;
+  background-color: #21618C;
 }
 
 .new .navbar-collapse {
-  background-color: #a97afd;
+  background-color: #21618C;
 }
 
 .portfolio-nav ul li.current span {
-  border-bottom: 2px solid #a97afd;
+  border-bottom: 2px solid #21618C;
 }
 
 .mh-project-gallery .grid-item figure:hover figcaption {
@@ -147,46 +147,46 @@
 }
 
 .mh-featured-project .mh-featured-item .mh-featured-project-content .project-category {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-single-project-slide .owl-controls .owl-dots .owl-dot {
-  border: 1px solid #a97afd;
+  border: 1px solid #21618C;
 }
 
 .mh-single-project-slide .owl-controls .owl-dots .owl-dot.active {
-  background-color: #a97afd;
+  background-color: #21618C;
 }
 
 .mh-service .mh-service-item a {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-pagination .page-link:hover {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-author-info .social-icon li a:hover {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-blog-category ul li a:hover {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .mh-blog-next-prev-post a {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .comment-deatils span {
-  color: #a97afd;
+  color: #21618C;
 }
 
 .btn.btn-fill {
-  background-color: #a97afd;
+  background-color: #21618C;
 }
 
 .mh-pricing .mh-pricing .fa {
-  color: #a97afd;
+  color: #21618C;
 }
 /*# sourceMappingURL=blue.css.map */
