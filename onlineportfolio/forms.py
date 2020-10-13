@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, BooleanField
+from wtforms import StringField, PasswordField, SubmitField, BooleanField, TextAreaField
 from flask_wtf.file import FileField, FileAllowed
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 
@@ -32,5 +32,17 @@ class AddAboutForm(FlaskForm):
                             DataRequired()])
     submit = SubmitField('Save')
 
+
 class DownloadCVForm(FlaskForm):
-    submit = SubmitField('Download CV')
+    cvsubmit = SubmitField('Download CV')
+
+
+class EmailForm(FlaskForm):
+    fname = StringField('First Name', validators=[
+                        DataRequired(), Length(min=2, max=30)])
+    lname = StringField('Last Name', validators=[
+                        DataRequired(), Length(min=2, max=30)])
+    email = StringField('Your Email', validators=[DataRequired(), Email()])
+    message = TextAreaField('Your Message', validators=[
+                            DataRequired(), Length(min=2)])
+    emailsubmit = SubmitField('Send Message')

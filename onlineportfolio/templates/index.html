@@ -220,7 +220,7 @@
                     <div class="col-md-2">
                         <form method="POST" action="">
                             {{ downloadcvform.csrf_token }}
-                            {{ downloadcvform.submit(class="btn btn-fill") }}
+                            {{ downloadcvform.cvsubmit(class="btn btn-fill") }}
                         </form>
                     </div>
                     <div class="col-md-3"></div>
@@ -554,7 +554,7 @@
                             quam nunc putamus parum claram,</p>
                             <form method="POST" action="">
                                 {{ downloadcvform.csrf_token }}
-                                {{ downloadcvform.submit(class="btn btn-fill") }}
+                                {{ downloadcvform.cvsubmit(class="btn btn-fill") }}
                             </form>
                         </div>
                     </div>
@@ -615,28 +615,65 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                                    <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator">
+                                    <form class="single-form quate-form wow fadeInUp" data-toggle="validator" method="POST" action="">
+                                        {{ emailform.csrf_token }}
                                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <input name="name" class="contact-name form-control" id="name" type="text" placeholder="First Name" required>
+                                                {% if emailform.fname.errors %}
+                                                    {{emailform.fname(class="form-control is-invalid", placeholder="First Name")}}
+                                                    <div class="invalid-feedback">
+                                                        {% for error in emailform.fname.errors %}
+                                                            <span>{{ error }}</span>
+                                                        {% endfor %}
+                                                    </div>
+                                                {% else %}
+                                                {{ emailform.fname(class="contact-name form-control", id="name", placeholder="First Name") }}
+                                                {% endif %}
                                             </div>
                 
                                             <div class="col-sm-12">
-                                                <input name="name" class="contact-email form-control" id="L_name" type="text" placeholder="Last Name" required>
+                                                {% if emailform.lname.errors %}
+                                                    {{emailform.lname(class="form-control is-invalid", placeholder="Last Name")}}
+                                                    <div class="invalid-feedback">
+                                                        {% for error in emailform.lname.errors %}
+                                                            <span>{{ error }}</span>
+                                                        {% endfor %}
+                                                    </div>
+                                                {% else %}
+                                                {{ emailform.lname(class="contact-name form-control", id="L_name", placeholder="Last Name") }}
+                                                {% endif %}
                                             </div>
                 
                                             <div class="col-sm-12">
-                                                <input name="name" class="contact-subject form-control" id="email" type="email" placeholder="Your Email" required>
+                                                {% if emailform.email.errors %}
+                                                    {{emailform.email(class="form-control is-invalid", placeholder="Your Email")}}
+                                                    <div class="invalid-feedback">
+                                                        {% for error in emailform.email.errors %}
+                                                            <span>{{ error }}</span>
+                                                        {% endfor %}
+                                                    </div>
+                                                {% else %}
+                                                {{ emailform.email(class="contact-subject form-control", id="email", placeholder="Your Email") }}
+                                                {% endif %}
                                             </div>
                 
                                             <div class="col-sm-12">
-                                                <textarea class="contact-message" id="message" rows="6" placeholder="Your Message" required></textarea>
+                                                {% if emailform.message.errors %}
+                                                    {{emailform.message(class="form-control is-invalid", placeholder="Your Email")}}
+                                                    <div class="invalid-feedback">
+                                                        {% for error in emailform.message.errors %}
+                                                            <span>{{ error }}</span>
+                                                        {% endfor %}
+                                                    </div>
+                                                {% else %}
+                                                {{ emailform.message(class="contact-message", id="message", placeholder="Your Message", rows="6") }}
+                                                {% endif %}
                                             </div>
                                             
                                             <!-- Subject Button -->
                                             <div class="btn-form col-sm-12">
-                                                <button type="submit" class="btn btn-fill btn-block" id="form-submit">Send Message</button>
+                                                {{ emailform.emailsubmit(class="btn btn-fill btn-block", id="form-submit") }}
                                             </div>
                                         </div>
                                     </form>

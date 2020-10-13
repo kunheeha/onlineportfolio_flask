@@ -2,23 +2,34 @@ import os
 import secrets
 import random
 from flask import render_template, request, url_for, flash, redirect, send_from_directory
-from onlineportfolio import app, db, bcrypt
+from flask_mail import Message
+from onlineportfolio import app, db, bcrypt, mail
 from flask_login import login_user, current_user, logout_user, login_required
-from onlineportfolio.forms import RegistrationForm, LoginForm, AddCVForm, AddAboutForm, DownloadCVForm
+from onlineportfolio.forms import RegistrationForm, LoginForm, AddCVForm, AddAboutForm, DownloadCVForm, EmailForm
 from onlineportfolio.models import User
 
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     downloadcvform = DownloadCVForm()
+    emailform = EmailForm()
 
-    if downloadcvform.validate_on_submit():
+    if downloadcvform.cvsubmit.data and downloadcvform.validate():
         me = User.query.first()
         cvfile = me.cv_file
         cvfiles = os.path.join(app.root_path, 'static/cvfiles')
         return send_from_directory(directory=cvfiles, filename=cvfile)
 
-    return render_template("index.html", downloadcvform=downloadcvform)
+    if emailform.emailsubmit.data and emailform.validate():
+
+        toreceive = Message(subject='From Online CV', sender=emailform.email.data,
+                            body=f'Sender: {emailform.fname.data} {emailform.lname.data}. Message : {emailform.message.data}. Email : {emailform.email.data}', recipients=["kunheeha@gmail.com"])
+        tosend = Message(subject='Confirm Email', body='Your email has been received. I will reply to you shortly. (Currently improving email format, appologies for unaesthetic email',
+                         sender='kunheeha@gmail.com', recipients=[emailform.email.data])
+        mail.send(tosend)
+        mail.send(toreceive)
+
+    return render_template("index.html", downloadcvform=downloadcvform, emailform=emailform)
 
 
 @app.route('/login', methods=['GET', 'POST'])
